@@ -1,0 +1,1301 @@
+#sub6{
+    width: 1280px;
+    height: auto;
+    margin: 0 auto;
+    &.sub6-swiper{
+        width: 100%;
+        user-select: none;
+        .swiper{
+            width: 800px;
+            overflow: hidden;
+            user-select: none;
+            .swiper-wrapper{
+                width: 260px;
+                height: 500px;
+                display: flex;
+                .swiper-slide{
+                    width: 260px;
+                    height: 500px;
+                    a{
+                        text-decoration: none;
+                        width: 240px;
+                        height: 320px;
+                        .img{
+                            overflow: hidden;
+                            z-index: 2;
+                            position: relative;
+                            width: 240px;
+                            height: 320px;
+                            &:hover{
+                                .over-img{
+                                    overflow: hidden;
+                                    display: block;
+                                    position: absolute;
+                                    left: 0;
+                                    width: 100%;
+                                    height: 100%;
+                                    transform: translateY(-50%);
+                                    transition: all 0.3s ease-in-out, opacity 0.5s ease-in-out;
+                                    opacity: 1;
+                                    img{
+                                        position: absolute;
+                                        left: 0;
+                                        top: 50%;
+                                        transform: translateY(-50%);
+                                        background: #fff;
+                                    }
+                                    &.on{
+                                        display: none;
+                                    }
+                                }
+                                .hover-btn{
+                                    gap: 45px;
+                                    display: flex;
+                                    transform: translateY(-100%);
+                                    position: absolute;
+                                    align-items: center;
+                                    justify-content: center;
+                                    z-index: 3;
+                                    background-color: #00BC70;
+                                    transition: all 0.3s ease-in-out;
+                                    cursor: pointer;
+                                    button{
+                                        width: 32px;
+                                        height: 32px;
+                                        border: 0;
+                                        &:nth-child(1){
+                                            background: url(../../../../public/images/sub/sub1/icon_heart_white.png) no-repeat;
+                                        }
+                                        &:nth-child(2){
+                                            background: url(../../../../public/images/sub/sub1/icon_cart_white.png) no-repeat;
+                                        }
+                                        &:nth-child(3){
+                                            background: url(../../../../public/images/sub/sub1/icon_buy_white.png) no-repeat;
+                                        }
+                                    }
+                                }
+                            }
+                            img{
+                                top: 0;
+                                left: 0;
+                                position: absolute;
+                                width: 240px;
+                                height: 320px;
+                            }
+                            .over-img{
+                                position: absolute;
+                                opacity: 0;
+                                top:50%;
+                                left:0;
+                                overflow: hidden;
+                             
+                            }
+                            .hover-btn{
+                                gap: 45px;
+                                display: flex;
+                                height: 60px;
+                                width: 100%;
+                                bottom: -60px;
+                                position: absolute;
+                                align-items: center;
+                                justify-content: center;
+                                z-index: 4;
+                                background-color: #00BC70;
+                                transition: all 0.3s ease-in-out;
+                                cursor: pointer;
+                                button{
+                                    width: 32px;
+                                    height: 32px;
+                                    border: 0;
+                                    &:nth-child(1){
+                                        background: url(../../../../public/images/sub/sub6/icon_heart_white.png) no-repeat;
+                                    }
+                                    &:nth-child(2){
+                                        background: url(../../../../public/images/sub/sub6/icon_cart_white.png) no-repeat;
+                                    }
+                                    &:nth-child(3){
+                                        background: url(../../../../public/images/sub/sub6/icon_buy_white.png) no-repeat;
+                                    }
+                                }
+                            }                            
+                        }
+                        .product-txt-box{
+                            .name{
+                                font-weight: 400;
+                                font-size: 14px;
+                                line-height: 1.43em;
+                                color: #666666;
+                                text-overflow: ellipsis;
+                                strong{
+                                    font-weight: 600;
+                                    text-transform: uppercase;
+                                }
+                            }
+                            .price-box{                                    
+                                margin-top: 10px;
+                                display: flex;
+                                flex-wrap: wrap;
+                                align-items: center;
+                                .price{                                        
+                                    font-weight: 700;
+                                    font-size: 20px;
+                                    line-height: 1.2em;
+                                    color: #000;
+                                }
+                                .sale{
+                                    margin-left: 10px;
+                                    font-weight: 300;
+                                    font-size: 20px;
+                                    line-height: 1.2em;
+                                    color: #FF0000;
+                                }
+                                .cost{
+                                    margin-left: 15px;
+                                    font-weight: 300;
+                                    font-size: 14px;
+                                    line-height: 1.29em;
+                                    text-decoration-line: line-through;
+                                    color: #999;
+                                    letter-spacing: 0;
+                                    vertical-align: top;
+                                    &.on{                   
+                                        font-weight: 700;
+                                        font-size: 20px;
+                                        line-height: 1.2em;
+                                        color: #000;
+                                        text-decoration-line: none;
+                                        margin-left: 0;
+                                    }
+                                }
+                            }
+                            .sticker-box{    
+                                display: flex;
+                                flex-wrap: wrap;
+                                gap: 1px;         
+                                span{
+                                    margin-top: 20px;
+                                    color: #00BC70;
+                                    background: #E0FBF0;                       
+                                    display: inline-flex;
+                                    align-items: center;
+                                    height: 18px;
+                                    padding: 0 5px;
+                                    font-weight: 400;
+                                    font-size: 10px;
+                                    line-height: 1.4em;
+                                    letter-spacing: 0;
+                                    &.off{
+                                        display: none;
+                                        margin-top: 0;
+                                    }
+                                }
+                            }
+                            .hash-box{
+                                display: flex;
+                                flex-wrap: wrap;
+                                gap: 5px;
+                                margin-top: 20px;
+                                button{
+                                    display: inline-flex;
+                                    align-items: center;
+                                    height: 20px;
+                                    padding: 0 8px;
+                                    font-size: 10px;
+                                    line-height: 1.2em;
+                                    letter-spacing: -0.02em;
+                                    color: #009D5E;
+                                    border-radius: 100px;
+                                    border: 0;
+                                    background-color: #EDFFF8;
+                                }
+                                .tag1{
+                                    &.on{
+                                        display: none;
+                                    }
+                                }
+                                .tag2{
+                                    &.on{
+                                        display: none;
+                                    }
+                                }
+                            }
+                            .review{                                    
+                                display: flex;
+                                align-items: center;
+                                margin-top: 15px;
+                                font-size: 12px;
+                                line-height: 1.33em;
+                                color: #999E9C;
+                                height: 1.33em;
+                                img{                                        
+                                    margin-right: 5px;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+            .swiper-pagination{
+                width: 760px;
+                position: relative;
+                left: 0;
+                top: 0;
+                z-index: 1;
+                height: 1px;
+                margin-top: 61px;
+                background-color: #ddd;
+                .swiper-pagination-progressbar-fill{
+                    //transform: translate3d(0px, 0px, 0px) scaleX(0.075) scaleY(1);
+                    //transition-duration: 400ms;
+                    position: absolute;
+                    left: 0;
+                    top: -1px;
+                    width: 100%;
+                    height: 2px;
+                    background-color: #000000;
+                    transform-origin: left top;
+                }
+            }
+        }
+    }
+    .location{
+        max-width: 1903px;
+        padding: 0;
+        width: 100%;
+        height: 61px;
+        border-bottom: 1px solid #dddddd;
+        .ineer-menu{
+            width: 1280px;
+            height: 100%;
+            margin: 0 auto;
+            display: flex;
+            align-items: center;
+            .home{
+                a{
+                    background: url(../../../../public/images/sub/sub1/ico_location_home.png) no-repeat;
+                    display: block;
+                    width: 16px;
+                    height: 16px;
+                }
+            }
+            .navi{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                position: relative;
+                transition: all 0.3s ease-in-out;
+                &:hover{
+                    ul{
+                        display: flex;
+                        
+                        
+                    }
+                }
+                img{
+                    margin: 0 12px;
+                    width: 12px;
+                    height: 12px;
+                }
+                button{
+                        background: #fff;
+                        border: 0;
+                        cursor: pointer;
+                        color: #000;
+                        display: flex;
+                        height: 40px;
+                        font-size: 12px;
+                        align-items: center;
+                    img{
+                        margin-left: 5px;
+                    }
+                }
+                ul{
+                    justify-content: center;
+                    display: none;
+                    z-index: 4;
+                    flex-flow: column;
+                    cursor: pointer;
+                    position: absolute;
+                    overflow: hidden;
+                    top: 39px;
+                    left: 17px;
+                    width: 170px;
+                    max-height: px;
+                    padding: 10px 0;
+                    background: #fff;
+                    border: 1px solid #AAAAAA;
+                    white-space: nowrap;
+                    color: #000;
+                    transition: all 0.3s ease-in-out;
+                    li{
+                        padding: 10px 15px;
+                        a{
+                            display: block;
+                            font-size: 14px;
+                            color: #888888;
+                            &:hover{
+                                color: #00BC70;
+                                font-weight: 500;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .title-container{  
+        width: 1280px;
+        .title-box{  
+            width: 1280px;
+            h2{                
+                width: 1280px;
+                margin: 60px auto 30px;
+                font-weight: 500;
+                font-size: 38px;
+                line-height: 1.11;
+            }
+        }
+    }
+    .content{
+        position: relative;
+        display: flex;    
+        width: 1280px;
+        //margin: 0 auto;
+        .left-box{  
+            padding: 0 0 100px;  
+            .recommend-box{
+                width: 760px;
+                margin: 0 40px 0 0;
+                padding-bottom: 30px;
+                border-bottom: 1px solid #eee;
+                .re-title-box{
+                    position: relative;
+                    h3{
+                        margin: 0 0 10px;
+                        font-weight: 600;
+                        font-size: 22px;
+                        line-height: 1.55;
+                    }
+                    a{
+                        color: #000;
+                        text-decoration: none;
+                        position: absolute;
+                        right: 0;
+                        top: 6px;
+                        padding-right: 21px;
+                        font-size: 14px;
+                        line-height: 1.43;
+                        background: url(../../../../public/images/sub/sub6/arr_r16_black.png) no-repeat right center;
+                    }  
+                }                          
+                .re-content-box{
+
+                }
+                p{
+                    font-size: 14px;
+                    line-height: 1.43;
+                    color: #999;
+                }
+                .btn-box{
+                    margin-top: 10px;
+                    button{
+                        color: #fff;
+                        background-color: #999;
+                        display: inline-flex;
+                        align-items: center;
+                        justify-content: center;    
+                        height: 30px;
+                        padding: 0 20px;
+                        font-weight: 600;
+                        font-size: 12px;
+                        letter-spacing: -0.01em;
+                        border-radius: 1px;
+                        border: 0;
+                        &:first-child{
+                            margin-right: 3px;
+                        }
+                    }
+                }
+            }
+            .content-container{
+                width: 760px;
+                margin-top: 60px;
+                .hbox{
+                    font-size: 22px;
+                    line-height: 1.33;
+                    font-weight: 600;
+                    strong{
+                        color: #00BC70;
+                        font-weight: 600;
+                        line-height: 1.43;
+                        vertical-align: top;
+                    }
+                    p{
+                        font-size: 14px;
+                        line-height: 1.43;
+                        color: #999;
+                        margin-top: 10px;
+                        font-weight: 400;
+                    }
+                }
+                .hbox2{
+                    margin: 100px 0 30px;
+                }
+                .customPick-box{
+                    width: 760px;
+                    margin-top: 150px;
+                    .product-list-box{
+                        width: 100%;
+                        ul{
+                            display: flex;
+                            flex-wrap: wrap;
+                            gap: 40px 20px;
+                            padding: 0;
+                            align-items: flex-start;
+                            li{                        
+                                width: 240px;
+                                list-style: none;
+                                a{
+                                    text-decoration: none;
+                                    width: 240px;
+                                    height: 320px;
+                                    .img{
+                                        overflow: hidden;
+                                        z-index: 2;
+                                        position: relative;
+                                        width: 240px;
+                                        height: 320px;
+                                        &:hover{
+                                            .over-img{
+                                                overflow: hidden;
+                                                display: block;
+                                                position: absolute;
+                                                left: 0;
+                                                width: 100%;
+                                                height: 100%;
+                                                transform: translateY(-50%);
+                                                transition: all 0.3s ease-in-out, opacity 0.5s ease-in-out;
+                                                opacity: 1;
+                                                img{
+                                                    position: absolute;
+                                                    left: 0;
+                                                    top: 50%;
+                                                    transform: translateY(-50%);
+                                                    background: #fff;
+                                                }
+                                                &.on{
+                                                    display: none;
+                                                }
+                                            }
+                                            .hover-btn{
+                                                gap: 45px;
+                                                display: flex;
+                                                transform: translateY(-100%);
+                                                position: absolute;
+                                                align-items: center;
+                                                justify-content: center;
+                                                z-index: 3;
+                                                background-color: #00BC70;
+                                                transition: all 0.3s ease-in-out;
+                                                cursor: pointer;
+                                                button{
+                                                    width: 32px;
+                                                    height: 32px;
+                                                    border: 0;
+                                                    &:nth-child(1){
+                                                        background: url(../../../../public/images/sub/sub1/icon_heart_white.png) no-repeat;
+                                                    }
+                                                    &:nth-child(2){
+                                                        background: url(../../../../public/images/sub/sub1/icon_cart_white.png) no-repeat;
+                                                    }
+                                                    &:nth-child(3){
+                                                        background: url(../../../../public/images/sub/sub1/icon_buy_white.png) no-repeat;
+                                                    }
+                                                }
+                                            }
+                                        }
+                                        img{
+                                            top: 0;
+                                            left: 0;
+                                            position: absolute;
+                                            width: 240px;
+                                            height: 320px;
+                                        }
+                                        .over-img{
+                                            position: absolute;
+                                            opacity: 0;
+                                            top:50%;
+                                            left:0;
+                                            overflow: hidden;
+                                        
+                                        }
+                                        .hover-btn{
+                                            gap: 45px;
+                                            display: flex;
+                                            height: 60px;
+                                            width: 100%;
+                                            bottom: -60px;
+                                            position: absolute;
+                                            align-items: center;
+                                            justify-content: center;
+                                            z-index: 4;
+                                            background-color: #00BC70;
+                                            transition: all 0.3s ease-in-out;
+                                            cursor: pointer;
+                                            button{
+                                                width: 32px;
+                                                height: 32px;
+                                                border: 0;
+                                                &:nth-child(1){
+                                                    background: url(../../../../public/images/sub/sub6/icon_heart_white.png) no-repeat;
+                                                }
+                                                &:nth-child(2){
+                                                    background: url(../../../../public/images/sub/sub6/icon_cart_white.png) no-repeat;
+                                                }
+                                                &:nth-child(3){
+                                                    background: url(../../../../public/images/sub/sub6/icon_buy_white.png) no-repeat;
+                                                }
+                                            }
+                                        }                            
+                                    }
+                                    .product-txt-box{
+                                        .name{
+                                            font-weight: 400;
+                                            font-size: 14px;
+                                            line-height: 1.43em;
+                                            color: #666666;
+                                            text-overflow: ellipsis;
+                                            strong{
+                                                font-weight: 600;
+                                                text-transform: uppercase;
+                                            }
+                                        }
+                                        .price-box{                                    
+                                            margin-top: 10px;
+                                            .price{                                        
+                                                font-weight: 700;
+                                                font-size: 20px;
+                                                line-height: 1.2em;
+                                                color: #000;
+                                            }
+                                            .sale{
+                                                margin-left: 10px;
+                                                font-weight: 300;
+                                                font-size: 20px;
+                                                line-height: 1.2em;
+                                                color: #FF0000;
+                                            }
+                                            .cost{
+                                                margin-left: 15px;
+                                                font-weight: 300;
+                                                font-size: 14px;
+                                                line-height: 1.29em;
+                                                text-decoration-line: line-through;
+                                                color: #999;
+                                                letter-spacing: 0;
+                                                &.on{                   
+                                                    font-weight: 700;
+                                                    font-size: 20px;
+                                                    line-height: 1.2em;
+                                                    color: #000;
+                                                    text-decoration-line: none;
+                                                    margin-left: 0;
+                                                }
+                                            }
+                                        }
+                                        .sticker-box{    
+                                            display: flex;
+                                            flex-wrap: wrap;
+                                            gap: 1px;         
+                                            span{
+                                                margin-top: 20px;
+                                                color: #00BC70;
+                                                background: #E0FBF0;                       
+                                                display: inline-flex;
+                                                align-items: center;
+                                                height: 18px;
+                                                padding: 0 5px;
+                                                font-weight: 400;
+                                                font-size: 10px;
+                                                line-height: 1.4em;
+                                                letter-spacing: 0;
+                                                &.off{
+                                                    display: none;
+                                                    margin-top: 0;
+                                                }
+                                            }
+                                        }
+                                        .hash-box{
+                                            display: flex;
+                                            flex-wrap: wrap;
+                                            gap: 5px;
+                                            margin-top: 20px;
+                                            button{
+                                                display: inline-flex;
+                                                align-items: center;
+                                                height: 20px;
+                                                padding: 0 8px;
+                                                font-size: 10px;
+                                                line-height: 1.2em;
+                                                letter-spacing: -0.02em;
+                                                color: #009D5E;
+                                                border-radius: 100px;
+                                                border: 0;
+                                                background-color: #EDFFF8;
+                                            }
+                                            .tag1{
+                                                &.on{
+                                                    display: none;
+                                                }
+                                            }
+                                            .tag2{
+                                                &.on{
+                                                    display: none;
+                                                }
+                                            }
+                                        }
+                                        .review{                                    
+                                            display: flex;
+                                            align-items: center;
+                                            margin-top: 15px;
+                                            font-size: 12px;
+                                            line-height: 1.33em;
+                                            color: #999E9C;
+                                            height: 1.33em;
+                                            img{                                        
+                                                margin-right: 5px;
+                                            }
+                                        }
+                                    }
+                                }
+                                &.small-product-list{
+                                    width: 170px;   
+                                    list-style: none;
+                                    a{
+                                        text-decoration: none;
+                                        width: 170px;  
+                                        height: 227px;  
+                                        .img{
+                                            overflow: hidden;
+                                            z-index: 2;
+                                            position: relative;
+                                            width: 170px;  
+                                            height: 227px; 
+                                            &:hover{
+                                                .over-img{
+                                                    overflow: hidden;
+                                                    display: block;
+                                                    position: absolute;
+                                                    left: 0;
+                                                    width: 100%;
+                                                    height: 100%;
+                                                    transform: translateY(-50%);
+                                                    transition: all 0.3s ease-in-out, opacity 0.5s ease-in-out;
+                                                    opacity: 1;
+                                                    img{
+                                                        position: absolute;
+                                                        left: 0;
+                                                        top: 50%;
+                                                        transform: translateY(-50%);
+                                                        background: #fff;
+                                                    }
+                                                    &.on{
+                                                        display: none;
+                                                    }
+                                                }
+                                                .hover-btn{
+                                                    gap: 30px;
+                                                    display: flex;
+                                                    height: 40px;
+                                                    transform: translateY(-100%);
+                                                    position: absolute;
+                                                    align-items: center;
+                                                    justify-content: center;
+                                                    z-index: 3;
+                                                    background-color: #00BC70;
+                                                    transition: all 0.3s ease-in-out;
+                                                    cursor: pointer;
+                                                    button{
+                                                        width: 27px;
+                                                        height: 27px;
+                                                        border: 0;
+                                                        &:nth-child(1){
+                                                            background: url(../../../../public/images/sub/sub1/icon_heart_white.png) no-repeat;
+                                                        }
+                                                        &:nth-child(2){
+                                                            background: url(../../../../public/images/sub/sub1/icon_cart_white.png) no-repeat;
+                                                        }
+                                                        &:nth-child(3){
+                                                            background: url(../../../../public/images/sub/sub1/icon_buy_white.png) no-repeat;
+                                                        }
+                                                    }
+                                                }
+                                            }
+                                            img{
+                                                top: 0;
+                                                left: 0;
+                                                position: absolute;
+                                                width: 170px;  
+                                                height: 227px; 
+                                            }
+                                            .over-img{
+                                                position: absolute;
+                                                opacity: 0;
+                                                top:50%;
+                                                left:0;
+                                                overflow: hidden;
+                                                width: 170px; 
+                                                height: 227px; 
+                                                display: none;
+                                                img{
+                                                    width: 100%;
+                                                    height: 100%;
+                                                }
+                                            }
+                                            .hover-btn{
+                                                gap: 30px;
+                                                display: flex;
+                                                height: 40px;
+                                                width: 100%;
+                                                bottom: -40px;
+                                                position: absolute;
+                                                align-items: center;
+                                                justify-content: center;
+                                                z-index: 4;
+                                                background-color: #00BC70;
+                                                transition: all 0.3s ease-in-out;
+                                                cursor: pointer;
+                                                button{
+                                                    width: 27px;
+                                                    height: 27px;
+                                                    border: 0;
+                                                    &:nth-child(1){
+                                                        background: url(../../../../public/images/sub/sub6/icon_heart_white.png) no-repeat;
+                                                    }
+                                                    &:nth-child(2){
+                                                        background: url(../../../../public/images/sub/sub6/icon_cart_white.png) no-repeat;
+                                                    }
+                                                    &:nth-child(3){
+                                                        background: url(../../../../public/images/sub/sub6/icon_buy_white.png) no-repeat;
+                                                    }
+                                                }
+                                            }     
+                                        }
+                                        .product-txt-box{
+                                            .price-box{         
+                                                .price{            
+                                                    font-size: 17px;
+                                                    line-height: 1.33em;
+                                                }
+                                                .sale{
+                                                    font-size: 18px;
+                                                    line-height: 1.33em;
+                                                }
+                                                .cost{
+                                                    font-size: 15px;
+                                                    &.on{              
+                                                        font-size: 15px;
+                                                        line-height: 1.33em;
+                                                    }
+                                                }
+                                            }
+                                            .sticker-box{    
+                                                display: flex;
+                                                flex-wrap: wrap;
+                                                gap: 1px;         
+                                                span{
+                                                    margin-top: 20px;
+                                                    color: #00BC70;
+                                                    background: #E0FBF0;                       
+                                                    display: inline-flex;
+                                                    align-items: center;
+                                                    height: 18px;
+                                                    padding: 0 5px;
+                                                    font-weight: 400;
+                                                    font-size: 10px;
+                                                    line-height: 1.4em;
+                                                    letter-spacing: 0;
+                                                    &.off{
+                                                        display: none;
+                                                        margin-top: 0;
+                                                    }
+                                                }
+                                            }
+                                            .hash-box{
+                                                display: flex;
+                                                flex-wrap: wrap;
+                                                gap: 5px;
+                                                margin-top: 20px;
+                                                button{
+                                                    display: inline-flex;
+                                                    align-items: center;
+                                                    height: 20px;
+                                                    padding: 0 8px;
+                                                    font-size: 10px;
+                                                    line-height: 1.2em;
+                                                    letter-spacing: -0.02em;
+                                                    color: #009D5E;
+                                                    border-radius: 100px;
+                                                    border: 0;
+                                                    background-color: #EDFFF8;
+                                                }
+                                                .tag1{
+                                                    &.on{
+                                                        display: none;
+                                                    }
+                                                }
+                                                .tag2{
+                                                    &.on{
+                                                        display: none;
+                                                    }
+                                                }
+                                            }
+                                            .review{                                    
+                                                display: flex;
+                                                align-items: center;
+                                                margin-top: 15px;
+                                                font-size: 12px;
+                                                line-height: 1.33em;
+                                                color: #999E9C;
+                                                height: 1.33em;
+                                                img{                                        
+                                                    margin-right: 5px;
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                        .age-tabmenu{
+                            margin: 30px 0 15px 0;
+                            >ul{
+                                display: flex;
+                                flex-wrap: wrap;
+                                position: relative;
+                                gap: 10px;
+                                >li{
+                                    width: 70px;
+                                    box-sizing: border-box;
+                                    //transition: color 0.75s, border-color 0.75s, background-color 0.75s;
+                                    button{
+                                        width: 100%;
+                                        height: 100%;
+                                        display: block;
+                                        padding: 6px 20px;
+                                        font-weight: 600;
+                                        font-size: 14px;
+                                        line-height: 1.29;
+                                        color: #999E9C;
+                                        white-space: nowrap;
+                                        cursor: pointer;
+                                        border-radius: 16px;
+                                        border: 1px solid #f5f5f5;
+                                        background-color: #f5f5f5;
+                                    }
+                                    &.none{  
+                                        border: 1px solid #f5f5f5;  
+                                        color: #999E9C;           
+                                        background-color: #f5f5f5; 
+                                        border-radius: 16px;                
+                                        &:hover{
+                                            border-radius: 16px;
+                                            border: 1px solid #009D5E;
+                                            color: #009D5E;
+                                            transition: color 0.75s, border-color 0.75s, background-color 0.75s;
+                                            button{
+                                                background: #fff;
+                                                color: #009D5E;
+                                            }
+                                        }
+                                    }
+                                    &.active{
+                                        border-radius: 16px;
+                                        transition: color 0.75s, border-color 0.75s, background-color 0.75s;
+                                        button{
+                                            border: 1px solid #000;
+                                            color: #000;
+                                            background-color: #fff;
+                                        }
+                                        &:hover{
+                                            border-radius: 16px;
+                                            button{
+                                                border: 1px solid #009D5E;
+                                                background-color: #fff;
+                                                color: #009D5E;
+                                                transition: color 0.75s, border-color 0.75s, background-color 0.75s;
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                        .product-list-wrap{
+                            display: flex;
+                            .rank-list{
+                                width: 170px;
+                                //margin-right: 40px;
+                                border-top: 1px solid #F5F5F5;
+                                list-style: none;
+                                padding: 0 40px 0 0;
+                                >li{
+                                    border-bottom: 1px solid #F5F5F5;                            
+                                    .rank-btn{
+                                        width: 100%;
+                                        padding: 16px 0;
+                                        font-size: 14px;
+                                        line-height: 1.43;
+                                        color: #999;
+                                        text-align: left;
+                                        overflow: hidden;
+                                        white-space: nowrap;
+                                        text-overflow: ellipsis;
+                                        word-wrap: break-word;
+                                        border: 0;
+                                        background: #fff;
+                                        span{
+                                            display: inline-block;
+                                            width: 32px;
+                                            margin-right: 5px;
+                                            text-align: center;
+                                        }
+                                    }
+                                    &.on{
+                                        border-bottom: 1px solid #000;
+                                        .rank-btn{
+                                            font-weight: 600;
+                                            color: #000;
+                                        }
+                                    }
+                                }
+                            }
+                            .rank-product-box{
+                                .rank-product-wrap{
+                                    li{
+                                        .item{
+
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                    .btn-set-box{
+                        margin-top: 40px;
+                        text-align: center;
+                        button{
+                            width: 340px;
+                            font-weight: 600;
+                            border: 1px solid #ddd;
+                            color: #666666;
+                            background: #fff;
+                            display: inline-flex;
+                            align-items: center;
+                            justify-content: center;
+                            position: relative;
+                            height: 40px;
+                            font-size: 14px;
+                            cursor: pointer;
+                            span{
+
+                            }
+                            p{
+                                display: flex;
+                                position: absolute;
+                                right: 21px;
+                                top: 20px;
+                                font-weight: 300;
+                                font-size: 12px;
+                                line-height: 1.33em;
+                                letter-spacing: -0.01em;
+                                color: #999999;
+                                transform: translateY(-50%);
+                            }
+                            &::before{
+                                display: block;
+                                content: '';
+                                flex: none;
+                                background: url(../../../../public/images/sub/sub6/ico_reset.png) no-repeat 50% 50%;
+                                background-size: 100% 100% !important;
+                                width: 16px;
+                                height: 16px;
+                                margin-right: 10px;
+                            }
+                        }
+                    }
+                }
+                .sub-list{
+                    display: flex;
+                }
+            }    
+        }
+        .shopping-log{
+            overflow: hidden;
+            position: sticky;
+            top: 8px;
+            display: flex;
+            flex-direction: column;
+            width: 480px;
+            height: 953px;
+            margin-top: -132px;
+            padding: 132px 0px 0 40px;
+            border: 1px solid #F5F5F5;
+            border-width: 0 1px;
+            .shopping-log-title{
+                margin-bottom: 40px;
+                flex: none;
+                h2{
+                    margin: 0 0 5px;
+                    span{
+                        font-weight: 600;
+                        font-size: 22px;
+                        line-height: 1.33;                        
+                    }
+                    button{
+                        display: inline-block;
+                        width: 16px;
+                        height: 16px;
+                        font-size: 0;
+                        vertical-align: middle;
+                        border: 0;
+                        margin-left: 5px;
+                        background: url(../../../../public/images/sub/sub6/ico_tooltip.png) no-repeat center;
+                    }
+                }
+                p{
+                    font-size: 12px;
+                    line-height: 1.43;
+                    color: #999;
+                    margin: 0;
+                }
+            }
+            .shopping-box{
+                position: relative;
+                flex: 1;
+                display: flex;
+                flex-direction: column;          
+                overflow-y: scroll;
+                &::-webkit-scrollbar {
+                    width: 13px;
+                    height: 50px;
+                }
+                &::-webkit-scrollbar-thumb {
+                    background-color: #e2e2e2;
+                    border-radius: 10px;
+                    background-clip: padding-box;
+                    border: 2px solid transparent;
+                }
+                &::-webkit-scrollbar-track {
+                    background-color: transparent;
+                    border-radius: 10px;
+                    box-shadow: inset 0px 0px 5px white;
+                }
+                .shopping-list-box{
+                    position: relative;
+                    flex: 1;
+                    align-content: flex-start;
+                    padding-left: 0;                    
+                    &::before {
+                        content: '';
+                        height: auto;
+                        position: absolute;
+                        bottom: -40px;
+                        left: 44px;
+                        top: 0;
+                        width: 1px;
+                        background-color: #eee;
+                    }
+                    li{
+                        width: 400px;
+                        list-style: none;
+                        padding-bottom: 50px;     
+                        a{
+                            .nail {
+                                width: 90px;
+                                height: 120px;
+                                background: #f5f5f5;
+                                position: relative;
+                                overflow: hidden;
+                                .img {
+                                    &::before {
+                                        content: '';
+                                        box-sizing: border-box;
+                                        position: absolute;
+                                        display: block;
+                                        top: 0;
+                                        left: 0;
+                                        width: 100%;
+                                        height: 100%;
+                                        z-index: 1;
+                                        border: 1px solid #00bc70;
+                                        opacity: 0;
+                                        transform: scale(50%);
+                                        transition: all 0.4s ease;
+                                    }
+                                    img {
+                                        width: 100%;
+                                        height: 100%;
+                                        position: absolute;
+                                        left: 0;
+                                        top: 50%;
+                                        transform: translateY(-50%);
+                                        background: #fff;
+                                        vertical-align: top;
+                                    }
+                                }
+                            }
+                            .product-txt-box{
+                                max-width: 282px;
+                                .price-box{
+                                    .price{
+                                        &.off{
+                                            display: none;
+                                        }
+                                    }
+                                }
+                                .hash-box{
+                                    .tag1{
+                                        &.on{
+                                            display: none;
+                                        }
+                                    }
+                                    .tag2{
+                                        &.on{
+                                            display: none;
+                                        }
+                                    }
+                                }
+                            }
+                        }                       
+                        &:hover{
+                            a{
+                                .nail {
+                                    .img {
+                                        &::before {
+                                            opacity: 1;
+                                            transform: scale(100%);
+                                            background: url(../../../../public/images/sub/sub6/ico_plusG.png) no-repeat left bottom;
+                                        }
+                                    }
+                                }   
+                                .product-txt-box{
+                                    .name{
+                                        color: #00BC70;
+                                        strong{
+                                            color: #00BC70;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                        a{
+                            display: flex;
+                            text-decoration: none;
+                            .img{
+                                position: relative;
+                                width: 90px;
+                                height: 120px;
+                                img{
+                                    width: 90px;
+                                    height: 120px;
+                                    background: #f5f5f5;
+                                    position: absolute;
+                                    left: 0;
+                                    top: 50%;
+                                    transform: translateY(-50%);
+                                }
+                            }
+                            .product-txt-box{
+                                margin: 0 0 0 20px;
+                                .name{
+                                    font-weight: 400;
+                                    font-size: 14px;
+                                    line-height: 1.43em;
+                                    color: #666666;
+                                    text-overflow: ellipsis;
+                                    strong{
+                                        font-weight: 600;
+                                        text-transform: uppercase;
+                                    }
+                                }
+                                .price-box{                                    
+                                    margin-top: 6px;
+                                    .cost{       
+                                        font-size: 14px;
+                                        line-height: 1.43em;
+                                        color: #000;
+                                        font-weight: 600;
+                                    }
+                                    .price{    
+                                        font-weight: 400;
+                                        font-size: 13px;
+                                        line-height: 1.23em;
+                                        text-decoration-line: line-through;
+                                        color: #999;
+                                        letter-spacing: 0;
+                                        margin-left: 15px;
+                                    }
+                                }
+                                .sticker-box{    
+                                    display: flex;
+                                    flex-wrap: wrap;
+                                    gap: 1px;         
+                                    span{
+                                        margin-top: 20px;
+                                        color: #00BC70;
+                                        background: #E0FBF0;                       
+                                        display: inline-flex;
+                                        align-items: center;
+                                        height: 18px;
+                                        padding: 0 5px;
+                                        font-weight: 400;
+                                        font-size: 10px;
+                                        line-height: 1.4em;
+                                        letter-spacing: 0;
+                                        &.off{
+                                            display: none;
+                                            margin-top: 0;
+                                        }
+                                    }
+                                }
+                                .hash-box{
+                                    display: flex;
+                                    flex-wrap: wrap;
+                                    gap: 5px;
+                                    margin-top: 20px;
+                                    button{
+                                        display: inline-flex;
+                                        align-items: center;
+                                        height: 20px;
+                                        padding: 0 8px;
+                                        font-size: 10px;
+                                        line-height: 1.2em;
+                                        letter-spacing: -0.02em;
+                                        color: #009D5E;
+                                        border-radius: 100px;
+                                        border: 0;
+                                        background-color: #EDFFF8;
+                                    }
+                                }
+                                .review{                                    
+                                    display: flex;
+                                    align-items: center;
+                                    margin-top: 15px;
+                                    font-size: 12px;
+                                    line-height: 1.33em;
+                                    color: #999E9C;
+                                    height: 1.33em;
+                                    img{                 
+                                        width: 12px;
+                                        height: 12px;                       
+                                        margin-right: 5px;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,92 @@
+#mainModal {
+    width: 100%;
+    .container {
+        width: 100%;
+        position: fixed;
+        top: 0;
+        bottom: 0;
+        z-index: 1005;
+        text-align: center;
+        background: rgba(0, 0, 0, 0.7);
+        overflow: hidden;
+        &::after {
+            content: '';
+            display: inline-block;
+            height: 100%;
+            vertical-align: middle;
+        }
+        .modal {
+            position: relative;
+            display: inline-block;
+            width: 375px;
+            height: 100%;
+            max-height: 372px;
+            text-align: left;
+            background: #fff;
+            vertical-align: middle;
+            overflow: hidden;
+            transform-origin: 50% 100%;
+            transition-timing-function: cubic-bezier(0.25, 0.75, 0.5, 1.25);
+            .event {
+                position: relative;
+                width: 100%;
+                box-sizing: border-box;
+                max-height: 312px;
+                padding: 16px 0 0 0;
+                .slide-view {
+                    width: 100%;
+                    padding: 0 16px;
+                    overflow: hidden;
+                    .slide-wrap {
+                        position: relative;
+                        display: flex;
+                        .slide {
+                            position: relative;
+                            min-width: 343px;
+                            text-align: left;
+                            a {
+                                img {
+                                    width: 343px;
+                                    height: 296px;
+                                    vertical-align: top;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+            .btn-wrap {
+                position: relative;
+                height: 60px;
+                margin: 0;
+                background: #fff;
+                color: #222;
+                display: flex;
+                gap: 0 10px;
+                text-align: center;
+                justify-content: center;
+                button {
+                    position: absolute;
+                    top: 0;
+                    height: 60px;
+                    font-weight: 600;
+                    font-size: 14px;
+                    color: #666;
+                    overflow: visible;
+                    cursor: pointer;
+                    background: none;
+                    border: 0;
+                    border-radius: 0;
+                    outline: none;
+                    &.toDay {
+                        left: 26px;
+                    }
+                    &.close {
+                        right: 26px;
+                        color: #000;
+                    }
+                }
+            }
+        }
+    }
+}

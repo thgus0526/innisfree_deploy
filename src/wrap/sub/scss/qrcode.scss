@@ -1,0 +1,115 @@
+#qrcode{
+    position: fixed;
+    right: 40px;
+    top: 417px;
+    z-index: 10;
+    margin-left: 650px;
+    text-align: center;
+    background: #fff;
+    transition: 0.4s ease-in-out;
+    width: 160px;
+    height: 104px;
+    align-items: center;
+    .box{
+        padding-top: 20px;
+        height: 100%;
+        width: 100%;
+        border: 1px solid #000;
+        position: absolute;
+        left: 50%;
+        top: 40px;
+        transform: translateX(-50%);
+        top: 20px;
+        &.off{
+            opacity: 1;
+            .off-text{
+                width: 100%;
+                p{
+                    font-size: 14px;
+                    line-height: 1.43;
+                    color: #000;
+                }
+            }
+        }
+        &.on{
+            opacity: 0;
+        }
+       
+    }
+    .button-box{
+        transform: translateY(20px);
+        position: absolute;
+        left: 10px;
+        bottom: 10px;
+        display: block;
+        width: 24px;
+        height: 24px;
+        button{
+            cursor: pointer;
+            background: url(../../../../public/images/sub/qrcode/ico_ly_close.png) no-repeat;
+            width: 24px;
+            height: 24px;
+            border: 0;
+        }
+    }
+    &.open{
+        height: 290px;
+        width: 300px;
+        position: fixed;
+        right: 40px;
+        top: 417px;
+        z-index: 10;
+        margin-left: 650px;
+        text-align: center;
+        background: transparent;
+        transition: all 0.4s ease-in-out;
+        .box{
+            transform: translateX(-50%);
+            &.off{
+                opacity: 0;
+            }
+            padding: 40px 0 43px;
+            &.on{
+                background: #fff;
+                height: 100%;
+                width: 100%;
+                opacity: 1;
+                .on-text{
+                    .top{
+                        font-size: 14px;
+                        line-height: 1.43;
+                        color: #000;
+                    }
+                }
+                .qr-box{
+                    img{
+                        width: 82px;
+                        height: 82px;
+                        vertical-align: top;
+                    }
+                }
+                .on-text2{
+                    .bottom{
+                        font-size: 12px;
+                        color: #999;
+                    }
+                }
+            }
+        }
+        .button-box{
+            position: absolute;
+            left: 10px;
+            bottom: 10px;
+            display: block;
+            width: 24px;
+            height: 24px;
+            button{
+                cursor: pointer;
+                background: url(../../../../public/images/sub/qrcode/ico_ly_close.png) no-repeat;
+                width: 24px;
+                height: 24px;
+                border: 0;
+            }
+        }
+    }
+}

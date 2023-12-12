@@ -1,0 +1,175 @@
+#section1 {
+    width: 100%;
+    .container {
+        width: 100%;
+        position: relative;
+        user-select: none;
+        .slide-view {
+            width: 100%;
+            max-width: 1920px;
+            margin: 0 auto;
+            overflow: hidden;
+            cursor: pointer;
+            .slide-wrap {
+                width: 100% * 8;
+                position: relative;
+                display: flex;
+                margin-left: -100%;
+                pointer-events: none;
+                .slide {
+                    width: 100%;
+                    a {
+                        display: block;
+                        height: 100%;
+                        position: relative;
+                        .cnt-area {
+                            display: flex;
+                            flex-direction: column;
+                            align-items: flex-start;
+                            text-align: left;
+                            justify-content: center;
+                            position: absolute;
+                            left: 50%;
+                            z-index: 2;
+                            width: 100%;
+                            max-width: 1280px;
+                            padding: 0 40px;
+                            height: 100%;
+                            color: #fff;
+                            transform: translateX(-50%);
+
+                            .tag-card {
+                                display: flex;
+                                gap: 1;
+                                height: 20px;
+                                span {
+                                    display: inline-flex;
+                                    align-items: center;
+                                    height: 20px;
+                                    padding: 0 10px;
+                                    font-size: 14px;
+                                    line-height: 1em;
+                                    letter-spacing: -0.01em;
+                                    &.card-st1 {
+                                        font-weight: 600;
+                                        background: #ffff82;
+                                        color: #000;
+                                        &.on {
+                                            display: none;
+                                        }
+                                    }
+                                    &.card-st2 {
+                                        font-weight: 400;
+                                        background: #000;
+                                        color: #fff;
+                                    }
+                                    &:first-child {
+
+                                    }
+                                }
+                            }
+                            .name {
+                                height: 124px;
+                                margin: 20px 0;
+                                text-shadow: 0 1px 0 rgba(0,0,0,0.15);
+                                span {
+                                    display: block;
+                                    font-weight: 300;
+                                    font-size: 52px;
+                                    line-height: 1.19em;
+                                    letter-spacing: -1;
+                                    &.prd-name1 {
+                                        font-weight: 600;
+                                    }
+                                }
+                            }
+                            .price {
+                                display: flex;
+                                align-items: center;
+                                gap: 10px;
+                                height: 28px;
+                                color: #fff;
+                                .t-unit {
+                                    font-weight: 600;
+                                    font-size: 24px;
+                                    line-height: 1.17em;
+                                }
+                                .t-cost {
+                                    font-weight: 300;
+                                    font-size: 20px;
+                                    line-height: 1.2em;
+                                    opacity: 0.5;
+                                    text-decoration: line-through;
+                                }
+                            }
+                        }
+                        .img-box {
+                            width: 100%;
+                            img {
+                                width: 100%;
+                            }
+                        }
+                    }
+                }
+            }
+            .slide-control {
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                width: 100%;
+                max-width: 1280px;
+                transform: translateX(-50%);
+                button {
+                    position: absolute;
+                    z-index: 10;
+                    width: 60px;
+                    height: 60px;
+                    font-size: 0;
+                    border: 0;
+                    background: url(../../../../public/images/index/arr_visual.png) no-repeat 50% 50%;
+                    &.btn-prev {
+                        left: -80px;
+                        top: -30px;
+                        transform: rotate(180deg);
+                    }
+                    &.btn-next {
+                        right: -80px;
+                        top: -30px;
+                    }
+                }
+            }
+            .page-nation {
+                display: flex;
+                position: absolute;
+                left: 50%;
+                bottom: 0;
+                z-index: 2;
+                width: 100%;
+                max-width: 1280px;
+                transform: translateX(-50%);
+                span {
+                    display: flex;
+                    font-size: 12px;
+                    color: #fff;
+                    background: #000;
+                    em {
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        position: relative;
+                        min-width: 35px;
+                        height: 30px;
+                        padding: 0 10px;
+                        &:first-child {
+                            font-weight: 600;
+                        }
+                        &:last-child {
+                            margin-left: 1px;
+                            opacity: 0.5;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

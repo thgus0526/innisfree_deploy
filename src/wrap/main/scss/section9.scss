@@ -1,0 +1,43 @@
+#section9 {
+    width: 100%;
+    margin-bottom: 100px;
+    .container {
+        position: relative;
+        width: 100%;
+        max-width: 1280px;
+        margin: 0 auto -101px;
+        padding: 40px 0;
+        border-top: 1px solid #eee;
+        &::before {
+            display: block;
+            content: '';
+            position: absolute;
+            left: 0;
+            top: 0;
+            z-index: 1;
+            height: 100%;
+            width: 30px;
+            background: linear-gradient(90deg, #fff, 0%,rgba(255, 255, 255, 0) 100%);
+        }
+        .less-than {
+            .list {
+                display: flex;
+                position: relative;
+                padding: 0 30px;
+                box-sizing: content-box;
+                justify-content: center;
+                .slide {
+                    padding-right: 30px;
+                    box-sizing: content-box !important;
+                    a {
+                        img {
+                            width: 160px;
+                            height: 64px;
+                            vertical-align: top;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

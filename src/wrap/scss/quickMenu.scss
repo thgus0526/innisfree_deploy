@@ -1,0 +1,36 @@
+#quickMenu {
+    display: block;
+    position: fixed;
+    right: 40px;
+    bottom: 40px;
+    z-index: 12;
+    .sch-slide {
+        display: flex;
+        align-items: center;
+        margin-top: 16px;
+        .btn-history {
+            position: absolute;
+            right: 0;
+            bottom: 50px;
+            width: 40px;
+            height: 40px;
+            border: 1px solid #eee;
+            box-shadow: 0 5px 10px rgba(0, 0, 0, 0.05);
+            border-radius: 20px;
+            background: #fff url(../../../public/images/ico_shoppinglog.png) no-repeat center center;
+            cursor: pointer;
+        }
+    }
+    .go-top {
+        position: absolute;
+        right: 0;
+        bottom: 0;
+        width: 40px;
+        height: 40px;
+        border: 1px solid #eee;
+        box-shadow: 0 5px 10px rgba(0, 0, 0, 0.05);
+        border-radius: 20px;
+        background: #fff url(../../../public/images/ico_top.png) no-repeat center center;
+        cursor: pointer;
+    }
+}

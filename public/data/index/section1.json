@@ -1,0 +1,12 @@
+{
+    "slide":[
+        {"no":"index_s01_01", "slideno": "06", "image":"BM11_717_left_pc.jpg", "gift":"~50%", "title1": "아이 라이너 & 리무버", "title2": "2개이상 구매시 50%", "price": "", "regular": ""},
+        {"no":"index_s01_02", "slideno": "01", "image":"BM11_712_left_pc.jpg", "sale":0.22, "gift":"사은품", "title1": "2주 뒤 피부나이 -1.8세", "title2": "NEW 콜라겐 탄력장벽 크림", "price": 30420, "regular": 39000},
+        {"no":"index_s01_03", "slideno": "02", "image":"BM11_713_left_pc.jpg", "sale":0.2, "gift":"사은품", "title1": "트러블 끝장케어", "title2": "레티놀 시카 앰플", "price": 45600, "regular": 57000},
+        {"no":"index_s01_04", "slideno": "03", "image":"BM11_714_left_pc.jpg", "sale":0.2, "gift":"사은품", "title1": "어딘가 모르게 칙칙한 피부엔", "title2": "비타C 잡티 토닝 세럼", "price": 44800, "regular": 56000},
+        {"no":"index_s01_05", "slideno": "04", "image":"BM11_715_left_pc.jpg", "sale":0.2, "gift":"사은품", "title1": "지금 부족한건 수분!", "title2": "그린티 씨드 세럼", "price": 24800, "regular": 31000},
+        {"no":"index_s01_06", "slideno": "05", "image":"BM11_716_left_pc.jpg", "sale":0.25, "gift":"사은품", "title1": "확신의 안티에이징", "title2": "블랙티 유스 인핸싱 앰플", "price": 42000, "regular": 56000},
+        {"no":"index_s01_07", "slideno": "06", "image":"BM11_717_left_pc.jpg", "gift":"~50%", "title1": "아이 라이너 & 리무버", "title2": "2개이상 구매시 50%", "price": "", "regular": ""},
+        {"no":"index_s01_08", "slideno": "01", "image":"BM11_712_left_pc.jpg", "sale":0.22, "gift":"사은품", "title1": "2주 뒤 피부나이 -1.8세", "title2": "NEW 콜라겐 탄력장벽 크림", "price": 30420, "regular": 39000}
+    ]
+}
