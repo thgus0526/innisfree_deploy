@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/innisfree_deploy/static/css/main.3ef556fc.css",
+    "main.js": "/innisfree_deploy/static/js/main.a8167172.js",
+    "static/media/brandStory_bg0201.png": "/innisfree_deploy/static/media/brandStory_bg0201.eb91c3258c36c6f5b6e3.png",
+    "static/media/brandStory_bg0101.png": "/innisfree_deploy/static/media/brandStory_bg0101.7aac3f1653e36082cfc2.png",
+    "static/media/brandStory_bg0301.png": "/innisfree_deploy/static/media/brandStory_bg0301.14fe01c8c5cccb047bf3.png",
+    "static/media/brandStory_bg0102.png": "/innisfree_deploy/static/media/brandStory_bg0102.f83676ed9147196b0ef9.png",
+    "static/media/green_slide01.png": "/innisfree_deploy/static/media/green_slide01.24efec271b0c7cb37c62.png",
+    "static/media/bg_page02.png": "/innisfree_deploy/static/media/bg_page02.0c31628ba3e3d24696f2.png",
+    "static/media/bg_page03.png": "/innisfree_deploy/static/media/bg_page03.052e4498b4087f4360c1.png",
+    "static/media/green_slide02.png": "/innisfree_deploy/static/media/green_slide02.b8ca8b73db497899cffd.png",
+    "static/media/bg_greenBox.png": "/innisfree_deploy/static/media/bg_greenBox.98fe01040c9070a9e676.png",
+    "static/media/bg_live_typo.png": "/innisfree_deploy/static/media/bg_live_typo.d46642761329af2969e7.png",
+    "index.html": "/innisfree_deploy/index.html",
+    "main.3ef556fc.css.map": "/innisfree_deploy/static/css/main.3ef556fc.css.map",
+    "main.a8167172.js.map": "/innisfree_deploy/static/js/main.a8167172.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.3ef556fc.css",
+    "static/js/main.a8167172.js"
+  ]
+}
